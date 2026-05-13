@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Anillo orbital exterior -->
+    <path
+        android:pathData="M54,54 m -32,0 a 32,32 0 1,0 64,0 a 32,32 0 1,0 -64,0"
+        android:strokeWidth="1.6"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startColor="#F59E0B"
+                android:endColor="#22D3EE"
+                android:type="linear"
+                android:startX="22"
+                android:startY="22"
+                android:endX="86"
+                android:endY="86" />
+        </aapt:attr>
+    </path>
+
+    <!-- Corona dorada superior (admin) -->
+    <path
+        android:pathData="M54,20 m -5,0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+        android:fillColor="#FCD34D" />
+    <path
+        android:pathData="M50,15 L52,11 L54,15 L56,11 L58,15 Z"
+        android:fillColor="#FCD34D" />
+
+    <!-- "C" estilizada con gradiente dorado-cyan -->
+    <path
+        android:pathData="M76,42 C 71,33 62,28 54,28 C 40,28 28,40 28,54 C 28,68 40,80 54,80 C 62,80 71,75 76,66"
+        android:strokeWidth="9"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startColor="#F59E0B"
+                android:endColor="#22D3EE"
+                android:type="linear"
+                android:startX="28"
+                android:startY="28"
+                android:endX="80"
+                android:endY="80" />
+        </aapt:attr>
+    </path>
+
+    <!-- Punto secundario cyan -->
+    <path
+        android:pathData="M82,54 m -2.6,0 a 2.6,2.6 0 1,0 5.2,0 a 2.6,2.6 0 1,0 -5.2,0"
+        android:fillColor="#67E8F9" />
+
+</vector>
