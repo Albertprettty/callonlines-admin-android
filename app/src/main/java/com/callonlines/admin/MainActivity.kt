@@ -118,6 +118,8 @@ class MainActivity : AppCompatActivity() {
             useWideViewPort = true
             loadWithOverviewMode = true
             setGeolocationEnabled(false)
+            @Suppress("DEPRECATION")
+            saveFormData = true
         }
 
         if (WebViewFeature.isFeatureSupported(WebViewFeature.FORCE_DARK)) {
@@ -263,6 +265,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         webView.onPause()
+        CookieManager.getInstance().flush()
     }
 
     override fun onResume() {
@@ -271,6 +274,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        CookieManager.getInstance().flush()
         webView.stopLoading()
         webView.destroy()
         super.onDestroy()
